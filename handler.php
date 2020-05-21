@@ -1,5 +1,5 @@
  <?php
-$to = "nastyasushentsova1@gmail.com";
+$to = "nastyasushentsova1@gmail.com, awesomemdl95@gmail.com";
 $tema = "Заявка на ремонт";
 $message = "ФИО: ".$_POST['name'] ."\r\n";
 $message .= "Причина обращения: ".$_POST['model'] ."\r\n";

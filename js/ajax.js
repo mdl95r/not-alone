@@ -1,5 +1,12 @@
 $(document).ready(function() {
 	$(".form-top").submit(function(event) {
+
+    try {
+      yaCounter63313444.reachGoal('formSubmit'); 
+    } catch (e) {
+      console.log('Отправка данных не удалась', e); 
+    }
+
     $(".popup").fadeOut(200);
     $("body").css("overflow", "visible");
     event.preventDefault();
