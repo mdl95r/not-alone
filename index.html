@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content="Ты не один - это проект группы волонтеров по оказанию помощи людям, находящимся в изоляции по причине физической недееспособности."/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+		<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"/>
+		<title>Not alone - это проект группы волонтеров по оказанию, нуждающимся людям в помощи.</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<main class="main-content">
+				<h1 class="site-title">
+					Not alone - это проект группы волонтеров.
+				</h1>
+
+				<p class="site-decs">Наша цель, это оказание помощи людям, находящимся в изоляции по причине физической недееспособности.</p>
+
+				<section class="reviews">
+						<h2>Какую помощь мы оказываем:</h2>
+
+						<div class="owl-carousel owl-theme">
+							<div class="review-item">
+								<img src="img/Cq1alaeWors.jpg" alt="Отзывы"/>
+								<p>Покупка медикаментов.</p>
+							</div>
+
+							<div class="review-item">
+								<img src="img/HqZNiroeoDg.jpg" alt="Отзывы"/>
+								<p>Покупка товаров первой необходимости.</p>
+							</div>
+							<div class="review-item">
+								<img src="img//Rq3zEVOF_no.jpg" alt="Отзывы"/>
+								<p>Оплата ЖКХ и вынос мусора.</p>
+							</div>
+						</div>
+				</section>
+				
+				<div class="call-button">
+					<span role="button" class="callback" onclick="showPopup()">Подать заявку</span>
+				</div>
+
+				<div class="popup">
+					<div class="popup_bg"></div>
+					
+					<div class="form">
+						<button class="btn-close" title="Закрыть (Esc)" type="button"></button>
+
+						<h2>Оставить заявку</h2>
+						<form class="form-top" name="form" action="/handler.php" enctype="multipart/form-data" method="post">
+							<label for="name">Ваше ФИО*</label>
+							
+							<input id="name" type="text" required name="name" title="Ваше ФИО"/>
+							
+							<label for="model">Причина обращения*</label>
+
+							<input id="model" type="text" required name="model" title="Причина обращения"/>
+
+							<label for="help">Помощь в которой вы нуждаетесь*</label>
+
+							<input id="help" type="text" required name="help" title="Помощь в которой вы нуждаетесь"/>
+							
+							<div class="submit-outer">
+								<button class="submit_form" type="submit" title="Отправить заявку">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/owl-carousel.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/form.js"></script>
+		<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	</body>
+</html>
