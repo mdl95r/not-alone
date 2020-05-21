@@ -18,7 +18,7 @@ $(document).ready(function() {
       var $method = $(this).attr("method"); 
     }
     
-    const $url = "/handler.php"
+    const $url = "./handler.php"
     
     $.ajax({
       url: $url,
